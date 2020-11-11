@@ -1,0 +1,10 @@
+<h1>New article</h1>
+
+<%= simple_form_for(@article) do |f| %>
+<%= f.input :title %>
+<%= f.text_field :content %>
+<%= f.submit "Create Article", class: 'btn btn-primary' %>
+<%end %>
+
+<%= link_to 'back', articles_path %>
+
